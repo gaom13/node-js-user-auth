@@ -1,10 +1,10 @@
 import express from 'express'
-import { PORT } from './config'
+import { PORT } from './config.js'
 
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('Helo World!')
+  res.send('<h1>Hello Germán Node.js</h1>')
 })
 
 app.listen(PORT, () => {
